@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Patua+One');
+body,
+input,
+select,
+  textarea{
+    color: white;
+    font-family: 'Comfortaa', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
   }
+
+.row{
+width:100%;
+margin-top:-1.5%;
+margin-left:0%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  #contatti{
+background-color: #0272A6;
+letter-spacing: 2px;
+
+}
+#contatti a{
+color: #fff;
+text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+
+@media (max-width: 575.98px) {
+
+#contatti{padding-bottom: 800px;}
+#contatti .maps iframe{
+  width: 100%;
+  height: 450px;
+}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+@media (min-width: 576px) {
+
+ #contatti{padding-bottom: 800px;}
+
+ #contatti .maps iframe{
+   width: 100%;
+   height: 450px;
+ }
 }
+
+@media (min-width: 768px) {
+
+#contatti{padding-bottom: 350px;}
+
+#contatti .maps iframe{
+  width: 100%;
+  height: 850px;
+}
+}
+
+@media (min-width: 992px) {
+#contatti{padding-bottom: 200px;}
+
+ #contatti .maps iframe{
+   width: 100%;
+   height: 700px;
+ }
+}
+
+
+#author a{
+color: #000;
+text-decoration: none;
+font-size:80%
+
+}
+.navbar {
+          margin-bottom: 0;
+          background-color: black;
+          z-index: 9999;
+          border: 0;
+          font-size: 12px !important;
+          line-height: 1.42857143 !important;
+          letter-spacing: 4px;
+          border-radius: 0;
+          font-family: 'Nova Square';
+
+
+      }
+
+      .navbar li a,
+      .navbar .navbar-brand {
+          color: #fff !important;
+      }
+
+      .navbar-nav li a:hover,
+      .navbar-nav li.active a {
+          color: #0e080f !important;
+          background-color: #fff !important;
+      }
+
+      .navbar-default .navbar-toggle {
+          border-color: transparent;
+          color: #fff !important;
+      }
+      .navbar-default .navbar-toggle .icon-bar {
+          background-color: blue;
+      }
+      .container{
+
+      width: 100%;
+
+      background-size: 100% 100%;
+      /*margin-top: -1.5vw;*/
+      margin-right: 0%;
+      margin-left: 0%;
+      margin-bottom: 0%;
+
+      background-repeat: no-repeat;
+      position: relative;
+      }
+      @media screen and (min-width: 900px) {
+        #map{
+          width:40%;
+          margin-top:4%;
+        }
+      }

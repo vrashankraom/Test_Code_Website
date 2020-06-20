@@ -5,39 +5,120 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    </head>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title> App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <nav class="navbar navbar-default" style="padding: 1%;">
+         <div class="container">
+             <div class="navbar-header">
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                 </button>
+       <div>
+         <img src="./images/logo.png" style="width:65px;">
+       </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+             </div>
+             <div class="collapse navbar-collapse" id="myNavbar" >
+                 <ul class="nav navbar-nav navbar-right" >
+                     <li><a href="../index.html">HOME</a></li>
+                     <li><a href="event.html">EVENTS</a></li>
+                     <li><a href="#">TEAM</a></li>
+                     <li><a href="#">CONTACT</a></li>
+                     <li><a href="blog.html">BLOGS</a></li>
+
+
+
+                 </ul>
+             </div>
+         </div>
+     </nav>
+
+
+       <div class="row" id="contatti">
+        <div class="container mt-5" >
+
+            <div class="row" style="height:500px;">
+              <div class="col-md-6 maps" id="map" >
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7779.209919046349!2d74.92022255717124!3d12.868772500810413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe93953598f53c53c!2sSahyadri%20College%20of%20Engineering%20%26%20Management!5e0!3m2!1skn!2sin!4v1583333893183!5m2!1skn!2sin"> frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+              <div class="col-md-6">
+                <h2 class="text-uppercase mt-3 font-weight-bold text-white">CONTACT US</h2>
+
+              <!--  <form action="">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control mt-2" placeholder="First Name" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control mt-2" placeholder="Last Name" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control mt-2" placeholder="Email" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input type="number" class="form-control mt-2" placeholder="Phone Number" required>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Suggestions" rows="3" required></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <button class="btn btn-light" style="color:black" type="submit">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+              -->
+              <div id="root"></div>
+                <div class="text-white">
+                <h2 class="text-uppercase mt-4 font-weight-bold">MEET US!</h2>
+                <i class="fab fa-instagram"></i><a href="#"> vineetnayaks</a><br>
+                <i class="fas fa-phone mt-3"></i> <a href="tel:+">+917019252847</a><br>
+                <i class="fas fa-phone mt-3"></i> <a href="tel:+">+919481742497</a><br>
+                <i class="fa fa-envelope mt-3"></i> <a href="">ayushmanbhava@gmail.com</a><br>
+
+
+                <div class="my-4">
+                <a href=""><i class="fab fa-facebook fa-3x pr-4"></i></a>
+                <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
+                <a href=""><i class="fab fa-instagram fa-3x"></i></a>
+                <a href=""><i class="fab fa-youtube fa-3x"></i></a>
+                <a href=""><i class="fab fa-github fa-3x"></i></a>
+
+                </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+        </div>
+
+
+        <div class="row text-center bg-success text-white" id="author">
+          <div class="col-12 mt-4 h4" style="height:1.5vh;">
+          <a style="font-size:102%" href="#">ACM-SAHYADRI &copy 2020</a>
+        </div>
+        </div>
+
+
   </body>
 </html>
